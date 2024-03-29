@@ -1,0 +1,124 @@
+.customNavbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    padding-left: 50px;
+    z-index: 2;
+    background: black;
+    overflow-y: hidden;
+    border-bottom: solid 1px rgb(197, 163, 10);
+}
+
+.title {
+    margin-left: 20px;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(206, 151, 32);
+}
+
+.menuBtn {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    padding-right: 80px;
+}
+
+.menu img{
+    width: 80px;
+}
+
+.menuItems {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    padding-right: 100px;
+}
+
+.menuItems a {
+    font-size: 20px;
+    color: rgb(206, 151, 32);
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.menuItems a:hover {
+    color: red;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.logo,
+.title {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.nav-link {
+    color: rgb(206, 151, 32);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-link:hover .nav-text {
+    display: inline;
+}
+
+@media screen and (max-width: 1000px) {
+    .menuBtn {
+        display: block;
+        cursor: pointer;
+    }
+    .menu img{
+        position: fixed;
+        top: 0;
+        margin-top: 30px;
+    }
+    .menu {
+        position: fixed;
+        right: 0;
+        margin-right: 20px;
+        margin-top: 280px;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 11px;
+        z-index: 99;
+    }
+    .menuItems {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 13px;
+        border-radius: 10px;
+        background: linear-gradient(0deg,
+                #e7d886e5 20%,
+                #080808e0 100%);
+        padding: 24px 33px;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+        z-index: 3;
+    }
+    .menuOpen {
+        display: flex;
+        z-index: 3;
+    }
+    .menuItems a {
+        color: black;
+    }
+}

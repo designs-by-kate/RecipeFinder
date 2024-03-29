@@ -1,0 +1,57 @@
+.favourite {
+    margin-top: 100px;
+    padding: 50px;
+    text-align: center;
+    justify-content: center;
+    background-image: url('../../assets/BG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow-y: auto;
+    border-bottom: solid 1px rgb(197, 163, 10);
+}
+
+.favourite h2{
+    color: rgb(230, 159, 8);
+    font-size: 60px;
+    background-color: rgba(0, 0, 0, 0.664);
+    border-radius: 5px;
+}
+.customCard .customBtn {
+    margin: 10px;
+    background-color: black;
+    border: solid 1px rgb(230, 159, 8);
+    color: rgb(230, 159, 8);
+    width: 300px;
+}
+
+.customCard .customBtn:hover {
+    background-color: rgb(230, 159, 8);
+    border: solid 1px black;
+    color: black;
+}
+
+.customCard .customBtnDel {
+    margin: 10px;
+    background-color: red;
+    border: solid 1px black;
+    color: black;
+    width: 300px;
+}
+
+.customCard .customBtnDel:hover {
+    background-color: rgb(230, 159, 8);
+    border: solid 1px black;
+    color: black;
+}
+
+.favourite .customCard {
+    height: 550px;
+    border: solid 1px rgb(230, 159, 8);
+}
+
+.favourite .customCard .customCB {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}

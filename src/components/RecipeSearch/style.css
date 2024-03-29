@@ -1,0 +1,43 @@
+.customSearch {
+    padding: 50px;
+    text-align: center;
+    justify-content: center;
+}
+.customSearch .customBtn {
+    margin: 10px;
+    background-color: black;
+    border: solid 1px rgb(230, 159, 8);
+    color: rgb(230, 159, 8);
+    width: 300px;
+}
+
+.customSearch .customBtn:hover {
+    background-color: red;
+    border: solid 1px black;
+    color: black;
+}
+
+.customSearch .customBtnFav {
+    margin: 10px;
+    background-color: rgb(230, 159, 8);
+    border: solid 1px black;
+    color: black;
+    width: 300px;
+}
+
+.customSearch .customBtnFav:hover {
+    background-color: red;
+    border: solid 1px black;
+    color: black;
+}
+
+.customSearch .customCard{
+    height: 550px;
+    border: solid 1px rgb(230, 159, 8);
+}
+
+.customSearch .customCB {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}

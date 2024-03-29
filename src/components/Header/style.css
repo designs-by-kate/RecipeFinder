@@ -1,0 +1,45 @@
+.customHeader {
+    width: 100%;
+    height: 80vh;
+}
+
+.headerBG {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.customHeader img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.headerText {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    background: linear-gradient(to bottom, black, transparent);
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerText h1 {
+    color: white;
+    font-size: 66px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.headerText p {
+    font-size: 28px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 50px;
+}
