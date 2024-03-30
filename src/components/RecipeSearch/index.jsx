@@ -14,9 +14,9 @@ const RecipeSearch = () => {
     const searchRecipes = async () => {
         try {
             const response = await axios.get(
-                `https://api.edamam.com/search?q=${query}&app_id=${ID}&app_key=${key}&from=${from}&to=${from + 10}`
+                `https://api.edamam.com/search?q=${query}&app_id=${ID}&app_key=${key}&from=${from}&to=${from + 4}`
             );
-            setRecipes([...recipes, ...response.data.hits]); // Append new recipes to existing recipes
+            setRecipes([...recipes, ...response.data.hits]); // Place new recipes at the beginning
         } catch (error) {
             console.error('Error fetching recipes:', error);
         }
@@ -26,7 +26,7 @@ const RecipeSearch = () => {
         if (query) {
             searchRecipes();
         }
-    }, [query, from]); // Call searchRecipes whenever query or from state changes
+    }, [from]); // Call searchRecipes whenever query or from state changes
 
     const handleSearch = (e) => {
         e.preventDefault();
@@ -36,13 +36,13 @@ const RecipeSearch = () => {
     };
 
     const loadMore = () => {
-        setFrom(from + 10);
+        setFrom(recipes.length);
     };
 
     return (
         <div className="customSearch">
             <Form onSubmit={handleSearch}>
-                <Form.Group controlId="formBasicEmail">
+                <Form.Group className="customSearchForm" controlId="formBasicEmail">
                     <Form.Control
                         type="text"
                         value={query}

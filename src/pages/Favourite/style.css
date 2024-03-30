@@ -11,12 +11,13 @@
     border-bottom: solid 1px rgb(197, 163, 10);
 }
 
-.favourite h2{
+.favourite h2 {
     color: rgb(230, 159, 8);
     font-size: 60px;
     background-color: rgba(0, 0, 0, 0.664);
     border-radius: 5px;
 }
+
 .customCard .customBtn {
     margin: 10px;
     background-color: black;
@@ -46,12 +47,80 @@
 }
 
 .favourite .customCard {
-    height: 550px;
+    display: flex;
+    flex-direction: column;
     border: solid 1px rgb(230, 159, 8);
 }
 
-.favourite .customCard .customCB {
+.customCB {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+}
+
+.customCB .card-title {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.customCB .customBtn {
+    margin-top: auto;
+}
+
+@media screen and (max-width: 1450px) {
+    .customCB .customBtn {
+        width: 200px;
+    }
+
+    .customCB .customBtnDel {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .customCB .customBtn {
+        width: 140px;
+    }
+
+    .customCB .customBtnDel {
+        width: 140px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .customCB .customBtn {
+        width: 200px;
+    }
+
+    .customCB .customBtnDel {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .customSearch .customBtn {
+        width: 200px;
+    }
+
+    .favourite {
+        margin-top: 130px;
+        padding: 20px;
+    }
+
+    .favourite h2 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .customSearch .customBtn {
+        width: 100px;
+    }
+
+    .customCB .customBtnDel {
+        width: 150px;
+    }
 }

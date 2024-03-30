@@ -22,6 +22,9 @@
     font-weight: 400;
     text-decoration: none;
     color: rgb(206, 151, 32);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
 .menuBtn {
@@ -55,6 +58,10 @@
 
 .menuItems a:hover {
     color: red;
+}
+
+.menuItems .nav-link.active {
+    color: white;
 }
 
 .logo {
@@ -122,3 +129,41 @@
         color: black;
     }
 }
+@media screen and (max-width: 650px){
+    .customNavbar {
+        padding: 20px;
+        padding-left: 10px;
+    }
+    .title {
+        margin-left: 10px;
+        font-size: 30px;
+    }
+    .menu {
+        right: 0;
+    }
+    .menu img{
+        right: 20px;
+        width: 50px;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 400px){
+    .logo {
+        max-width: 80px;
+        margin-left: 5px;
+    }
+    .title {
+        margin-left: 5px;
+        font-size: 20px;
+    }
+    .title span{
+        display: block;
+    }
+    .menu img{
+        right: 20px;
+        margin-top: 30px;
+    }
+}
+
+
+

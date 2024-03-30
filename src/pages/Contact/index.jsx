@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
-// import emailjs from '@emailjs/browser';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
+// import emailjs from 'emailjs-com';
 import LinkedIn from '../../assets/linkedinIcon.png';
 import GitHub from '../../assets/githubIcon.png';
 import Email from '../../assets/emailIcon.png';

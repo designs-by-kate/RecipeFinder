@@ -3,6 +3,7 @@
     text-align: center;
     justify-content: center;
 }
+
 .customSearch .customBtn {
     margin: 10px;
     background-color: black;
@@ -31,13 +32,63 @@
     color: black;
 }
 
-.customSearch .customCard{
-    height: 550px;
+.customSearch .customCard {
+    display: flex;
+    flex-direction: column;
     border: solid 1px rgb(230, 159, 8);
 }
 
-.customSearch .customCB {
+.customCB {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center; 
+}
+
+.customCB .card-title {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 1450px){
+    .customCB .customBtn{
+       width: 200px;
+    }
+    .customCB .customBtnFav{
+        width: 200px;
+     }
+}
+
+@media screen and (max-width: 1050px){
+    .customCB .customBtn{
+       width: 140px;
+    }
+    .customCB .customBtnFav{
+        width: 140px;
+     }
+}
+@media screen and (max-width: 767px){
+    .customCB .customBtn{
+       width: 200px;
+    }
+    .customCB .customBtnFav{
+        width: 200px;
+     }
+}
+
+@media screen and (max-width: 450px){
+    .customSearch .customBtn {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .customSearch .customBtn {
+        width: 150px;
+    }
+    .customCB .customBtnFav{
+        width: 150px;
+     }
 }

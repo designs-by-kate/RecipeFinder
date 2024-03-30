@@ -43,3 +43,14 @@
     padding: 20px;
     border-radius: 50px;
 }
+
+@media screen and (max-width: 650px){
+    .headerText p {
+        font-size: 20px;        
+    }
+}
+@media screen and (max-width: 450px){
+    .headerText h1 {
+        font-size: 50px;        
+    }
+}
