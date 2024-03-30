@@ -2,7 +2,8 @@ https://recipeefinder.netlify.app/#/RecipeFinder/
 
 # Recipe Finder App
 ![License Badge](https://img.shields.io/badge/license-MIT-brightgreen)
-Welcome to the Recipe Finder app! This app allows users to search for recipes, save their favorite meals, and review them later.
+
+### Welcome to the Recipe Finder app! This app allows users to search for recipes, save their favorite meals, and review them later.
 
 ![image](https://github.com/designs-by-kate/RecipeFinder/assets/146155569/17794f84-0795-4d56-a82f-55169396efe9)
 
@@ -26,7 +27,7 @@ Welcome to the Recipe Finder app! This app allows users to search for recipes, s
 
 - Search Option: Users can search for recipes using the search bar.
   
-![image](https://github.com/designs-by-kate/RecipeFinder/assets/146155569/baba869d-6027-460b-83d5-e0e3931c5be8)
+![image](https://github.com/designs-by-kate/RecipeFinder/assets/146155569/acabb186-6dd1-4406-997c-8faeff77f664)
 
 - Display Recipes: After the user types in a meal, the app displays 4 recipes. Users can load more recipes by clicking the "Load More" button.
   
