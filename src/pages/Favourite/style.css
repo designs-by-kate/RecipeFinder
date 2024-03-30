@@ -9,6 +9,7 @@
     width: 100%;
     overflow-y: auto;
     border-bottom: solid 1px rgb(197, 163, 10);
+    min-height: 750px;
 }
 
 .favourite h2 {

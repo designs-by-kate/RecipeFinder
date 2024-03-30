@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from 'react-router-dom';
 import "./style.css";
 import logo from '../../assets/menuLogo.png'
-import menuIcon from '../../assets/menuIcon.png'
+import menuIcon from '../../assets/menuIconGold.png'
 import closeIcon from '../../assets/closeIcon.png'
 
 const Navbar = () => {
